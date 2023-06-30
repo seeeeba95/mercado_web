@@ -4,15 +4,13 @@
 
 En este desafío deberás construir un servidor con Express que utilice el motor de plantillas Handlebars para desarrollar componentes y renderizar variables e iteradores en el template del sitio web.
 
-| ⭐️ Integrantes ⭐️ |
---
-| Linda Fiedler |
-| María Díaz |
-| Camila Belén |
-| Sebastián Zapata |
-| Víctor Araya |
-| |
-| |
+## Integrantes ⭐️
+- Linda Fiedler
+- María Díaz
+- Camila Belén
+- Sebastián Zapata
+- Víctor Araya
+- ...
 
 ## Ejercicio Propuesto 
 
