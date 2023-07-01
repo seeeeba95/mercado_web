@@ -6,11 +6,14 @@ En este desafío deberás construir un servidor con Express que utilice el motor
 
 ## Integrantes ⭐️
 - Linda Fiedler
-- María Díaz
+- María Jesús Díaz
 - Camila Belén
 - Sebastián Zapata
 - Víctor Araya
-- ...
+- Yoselyn Montecinos
+- Juvenal Pacheco
+- Carolina Salas
+- Francisco Soto
 
 ## Ejercicio Propuesto 
 
