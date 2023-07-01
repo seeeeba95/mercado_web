@@ -24,14 +24,14 @@ app.set('view engine', 'hbs'); // 2
 app.use('/bootstrap', express.static(__dirname + '/node_modules/bootstrap/dist'));
 
 // ROUTES
-app.get('/', (req, res) => {
-	res.render('main');
-});
-
-// app.get('/user/:id', (req, res) => {
-// 	const user = req.params.user;
-// 	res.render('main', { user });
+// app.get('/', (req, res) => {
+// 	res.render('main');
 // });
+
+app.get('/user/:name', (req, res) => {
+	const user = req.params.user;
+	res.render('main', { user });
+});
 
 app.listen(PORT, () => {
 	console.log(`El servidor está inicializado en  ${HOST}:${PORT}`);
