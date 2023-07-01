@@ -1,0 +1,18 @@
+.bg-navbar {
+    background-color: rgb(33, 186, 19);
+}
+
+.nav-item {
+    text-align: center;
+}
+
+.nav-link {
+    color: rgb(255, 255, 255);
+    
+}
+
+.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
