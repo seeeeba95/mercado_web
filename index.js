@@ -5,6 +5,8 @@ const PORT = 3000;
 
 const app = express();
 
+const verduras = ['banana', 'cebollas', 'lechuga', 'papas', 'pimenton', 'tomate'];
+
 // CONFIGURACION HANDLEBARS
 /* 1: Establece Handlebars como el motor de plantillas con la extensión .hbs y define el directorio de layouts que esta en /views.
       Antes: app.engine('handlebars', engine({ layoutsDir: __dirname + '/views' }));.
@@ -22,6 +24,7 @@ app.set('view engine', 'hbs'); // 2
 
 // MIDDLEWARES
 app.use('/bootstrap', express.static(__dirname + '/node_modules/bootstrap/dist'));
+app.use(express.static('public'));
 
 // ROUTES
 // app.get('/', (req, res) => {
@@ -30,7 +33,7 @@ app.use('/bootstrap', express.static(__dirname + '/node_modules/bootstrap/dist')
 
 app.get('/user/:name', (req, res) => {
 	const user = req.params.name;
-	res.render('main', { user });
+	res.render('main', { user, verduras });
 });
 
 app.listen(PORT, () => {
