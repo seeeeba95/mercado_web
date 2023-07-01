@@ -29,7 +29,7 @@ app.use('/bootstrap', express.static(__dirname + '/node_modules/bootstrap/dist')
 // });
 
 app.get('/user/:name', (req, res) => {
-	const user = req.params.user;
+	const user = req.params.name;
 	res.render('main', { user });
 });
 
