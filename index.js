@@ -10,7 +10,14 @@ const app = express();
       Antes: app.engine('handlebars', engine({ layoutsDir: __dirname + '/views' }));.
    2: Establece el motor de plantillas handlebars como predeterminado.
    PD: set() es un metodo de express que permite establecer valores de configuracion. engine() es un metodo de handlebars que permite definir un motor (de plantillas?). */
-app.engine('hbs', engine({ extname: '.hbs', layoutsDir: __dirname + '/views' })); // 1
+app.engine(
+	'hbs',
+	engine({
+		extname: '.hbs',
+		layoutsDir: __dirname + '/views',
+		partialsDir: __dirname + '/views/components/',
+	})
+); // 1
 app.set('view engine', 'hbs'); // 2
 
 // MIDDLEWARES
